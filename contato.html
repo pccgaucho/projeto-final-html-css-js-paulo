@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./contato.js"></script>
+    <title>Contato - Paulo Flores</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao">
+            <div class="retangulo">
+                <a href="./index.html" class="links" id="home">Home</a>
+            </div>
+            <div class="retangulo">
+                <a href="#" class="links" id="contato_contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container_contato">
+        <input class="inputs" nome="nome" type="text" id="input_nome" placeholder="Digite o seu nome" required="">
+        <input class="inputs" nome="e-mail" type="email" id="input_email" placeholder="Digite o seu e-mail" required="">
+        <textarea class="inputs" id="texto_area" nome="mensagem" placeholder="Digite sua mensagem" required=""></textarea>
+        <button class="btn" id="btn" type="submit">ENVIAR</button>
+        <div class="envio" id="envio">Seu e-mail foi enviado com sucesso!</div>
+        <div class="retorno" id="retorno">
+            <h2>Retorno da API</h2>
+            <p id="mensagem_retorno"></p>
+            <p id="nome_retornado">Nome:</p>
+            <p id="email_retornado">E-mail:</p>
+            <p id="mensagem_retornada">Mensagem:</p>
+        </div>
+    </div>
+</body>
+</html>
